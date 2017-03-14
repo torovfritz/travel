@@ -1,6 +1,6 @@
 ---
 imports:
-    - serp.typography
+    - Formats.Price
 ---
 
 # Цена

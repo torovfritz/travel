@@ -1,6 +1,6 @@
 ---
 imports:
-    - travel.Hotel
+    - Travel.Hotel
 ---
 
 # Блок представления отеля

@@ -1,5 +1,5 @@
 import 'beast';
-import 'formats.Price';
+import 'Formats.Price';
 import 'css!./Hotel.styl';
 
 Beast

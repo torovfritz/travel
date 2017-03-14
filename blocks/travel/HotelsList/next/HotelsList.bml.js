@@ -1,5 +1,5 @@
 import 'beast';
-import 'travel.Hotel';
+import 'Travel.Hotel';
 
 import 'css!./HotelsList.styl';
 
