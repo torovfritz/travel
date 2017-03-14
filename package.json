@@ -1,0 +1,10 @@
+{
+    "name": "travel",
+    "scripts": {
+        "start": "node_modules/.bin/dpt start"
+    },
+    "dependencies": {
+        "dpt": "0.2.x",
+        "dpt-docs": "0.2.x"
+    }
+}

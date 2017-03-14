@@ -1,0 +1,27 @@
+@import '../../../../const/const.styl'
+
+.Hotel
+    &__photo
+        width: 100%
+        background-size: cover
+        margin-bottom: 4px
+        position: relative
+        &::after
+            content: ''
+            display: block
+            padding-bottom: (100/3*2)%
+
+    &__name
+        display: block
+        margin-bottom: 4px
+        text-decoration: none
+        line-height 1.3em
+
+    &__price
+        font-size: 40px
+        color: #fff
+        text-shadow 0 0 1px rgba(0, 0, 0, 0.6)
+        position: absolute
+        bottom 4px
+        width: 100%
+        text-align center

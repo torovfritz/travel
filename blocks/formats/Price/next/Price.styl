@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Rouble;
+    src: embedurl('rouble.ttf');
+}
+
+.Price {
+    white-space: nowrap;
+    position: relative;
+    vertical-align: baseline;
+
+    &__group + &__group {
+        margin-left: 0.2em;
+    }
+
+    &__code_currency_RUR {
+        font-family: Rouble;
+    }
+
+    &__code {
+        margin-left: 0.2em;
+    }
+}
