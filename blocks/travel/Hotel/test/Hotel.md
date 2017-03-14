@@ -1,10 +1,9 @@
 ---
 imports:
-    - Travel.Hotel
+    - travel.Hotel
 ---
 
-# Just a hotel
-
+# Блок представления отеля
 ```bml
 <Hotel>
     <photo>https://avatars.mds.yandex.net/get-tours/99909/cd3c321af6293226465741e49abfd28b/large</photo>
@@ -13,7 +12,12 @@ imports:
 </Hotel>
 ```
 
-
 ## Elements
-## Mods
-## Events
+### photo
+Содержит адрес фотографии отеля
+
+### name
+Название отеля
+
+### price
+Цена за ночь
