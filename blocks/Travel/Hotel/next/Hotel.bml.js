@@ -3,6 +3,17 @@ import 'Formats.Price';
 import 'css!./Hotel.styl';
 
 Beast
+.decl('Hotel', {
+    expand: function(){
+        this.append(
+            this.get('photo'),
+            this.get('price'),
+            this.get('name')
+        )
+    }
+})
+
+
 .decl('Hotel__photo', {
     expand: function() {
         this.css('background-image', `url(${this.text()})`);
