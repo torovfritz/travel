@@ -1,5 +1,6 @@
 import 'beast';
 import 'Formats.Price';
+import 'Parts.Link';
 
 import 'css!./Phone.styl';
 
@@ -39,8 +40,9 @@ Beast
 })
 
 .decl('Phone__model', {
-    tag: 'a',
     expand: function(){
-        this.domAttr('href', '#'+this.text().replace(/\s/g, '-'))
+        this.append(
+            <Link href="{'#'+this.text().replace(/\s/g, '-')}">{this.text()}</Link>
+        )
     }
 })

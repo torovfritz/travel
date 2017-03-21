@@ -1,0 +1,23 @@
+@import '../../../../const/const.styl'
+
+.Link
+    text-decoration: none
+    color: $linkColor
+    &:visited
+        color: darken($linkColor, 40%)
+    &:hover
+        color: lighten($linkColor, 40%)
+    &__icon
+        width: 0.7em
+        height: 0.7em
+        background-color: $linkColor
+        display: inline-block
+        mask-image: url(./i/external-link.svg)
+        mask-repeat: no-repeat
+        mask-position: left bottom
+        mask-size: contain
+        margin-right: 0.2em
+        ~/:visited &
+            background-color: darken($linkColor, 40%)
+        ~/:hover &
+            background-color: lighten($linkColor, 40%)
