@@ -7,11 +7,21 @@ import 'css!./Phone.styl';
 Beast
 .decl('Phone', {
     expand: function() {
-        this.append(
-            this.get('photo'),
-            this.get('price'),
-            this.get('model')
-        )
+        if (this.mod('Type') === undefined) {
+            this.append(
+                this.get('photo'),
+                this.get('model'),
+                this.get('price'),
+            )
+        } else if (this.mod('Type') === 'withBtn') {
+                this.append(
+                    this.get('photo'),
+                    this.get('model'),
+                    this.get('price'),
+                    this.get('Button'),
+                )
+        }
+
         this.param({
             w: this.get('width')[0].text(),
             h: this.get('height')[0].text()

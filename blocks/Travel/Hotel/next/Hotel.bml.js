@@ -24,7 +24,10 @@ Beast
 .decl('Hotel__name', {
     tag: 'a',
     expand: function(){
-        this.domAttr('href', '#'+Math.random())
+        this.append(
+            <Link>{this.text()}</Link>
+        )
+        this.domAttr('href', '#'+Math.random());
     }
 })
 

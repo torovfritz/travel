@@ -4,13 +4,14 @@ imports:
     - Travel.Page
     - Phones.Phone
     - Phones.PhonesList
+    - Buttons.Primary
 ---
 
 <Page>
 
     <PhonesList>
 
-        <phone>
+        <phone Type="withBtn">
             <width>63</width>
             <height>121</height>
             <price>3949</price>
@@ -20,9 +21,10 @@ imports:
             <photo>/assets/demo/phones/samsung-galaxy-j1-mini.jpeg</photo>
             <os>Android 5.1</os>
             <storage>8</storage>
+            <Button State="disabled">Товар отсутствует</Button>
         </phone>
 
-        <phone>
+        <phone Type="withBtn">
             <model>Samsung Galaxy J1 (2016)</model>
             <photo>/assets/demo/phones/samsung-galaxy-j1.jpeg</photo>
             <width>69</width>
@@ -32,9 +34,10 @@ imports:
             <resolution>800x480</resolution>
             <os>Android 5.1</os>
             <storage>8</storage>
+            <Button>Купить</Button>
         </phone>
 
-        <phone>
+        <phone Type="withBtn">
             <model>Prestigio Grace S5</model>
             <photo>/assets/demo/phones/prestigio-grace-s5.jpeg</photo>
             <width>75</width>
@@ -44,9 +47,10 @@ imports:
             <resolution>1280x720</resolution>
             <os>Android 5.1</os>
             <storage>8</storage>
+            <Button>Купить</Button>
         </phone>
 
-        <phone>
+        <phone Type="withBtn">
             <model>Samsung Galaxy J5 (2016)</model>
             <photo>/assets/demo/phones/samsung-galaxy-j5.jpeg</photo>
             <width>72</width>
@@ -56,6 +60,7 @@ imports:
             <resolution>1280x720</resolution>
             <os>Android 5.1</os>
             <storage>16</storage>
+            <Button>Купить</Button>
         </phone>
 
         <phone>
@@ -68,6 +73,7 @@ imports:
             <resolution>1920x1080</resolution>
             <os>Android 6.0</os>
             <storage>16</storage>
+            <Button>Купить</Button>
         </phone>
 
     </PhonesList>
